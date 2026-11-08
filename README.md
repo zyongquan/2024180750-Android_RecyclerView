@@ -9,7 +9,7 @@ Android 移动应用开发 实验五作业：在实验四翻牌游戏的基础�
 - 语言：Kotlin + XML 布局，MVC 分层
 - 最低版本：Android 7.0（API 24）；编译版本：API 37
 - 代码托管：[GitHub - zyongquan/2024180750-Android_RecyclerView](https://github.com/zyongquan/2024180750-Android_RecyclerView)
-- 分支：`main`（稳定版本，通过 Pull Request 合并） / `Dev`（本次实验开发分支）
+- 分支：`main`（本次代码已直接推送到 main）
 
 ## 运行截图
 
@@ -31,7 +31,7 @@ Android 移动应用开发 实验五作业：在实验四翻牌游戏的基础�
 
 | 实验要求 | 实现方式 |
 | --- | --- |
-| 新建 `Dev` 分支，保留 `main`，通过 PR 合并 | 本地 `Dev` 分支开发，推送后创建 Pull Request 合并到 `main`，并开启 main 分支保护 |
+| 使用 Git 管理并推送到 GitHub | 本次按提交要求直接推送到 `main` 分支（未新建 Dev 分支 / PR） |
 | MainActivity 添加菜单，点击弹出关于对话框 | `menu_main.xml` + `onCreateOptionsMenu()` + `MaterialAlertDialogBuilder` |
 | RecyclerView 实现 24 张牌游戏，界面规整美观 | `RecyclerView` + `GridLayoutManager`（4 列 × 6 行），自适应牌高，一屏完整显示 |
 | 适配器从 `RecyclerView.Adapter` 派生，重载方法并处理回调 | `CardAdapter` 重写 `getItemCount / onCreateViewHolder / onBindViewHolder`，通过 `OnCardClickListener` 回调点击位置 |
@@ -111,11 +111,10 @@ app/src/main/
 
 测试结果：单元测试 **27 / 27 通过**，界面测试 **14 / 14 通过**。
 
-## Git 分支与 PR
+## Git 仓库
 
-- `main`：稳定分支，禁止直接 push；通过 Pull Request 合并；
-- `Dev`：实验五开发分支，包含本次全部修改；
-- 提交后 GitHub 上可见 `main` 与 `Dev` 两个分支，Pull Request 记录见仓库页面。
+- 代码已直接推送到 GitHub 的 `main` 分支；
+- 本次未新建其他分支，也未使用 Pull Request。
 
 ## 作者
 
